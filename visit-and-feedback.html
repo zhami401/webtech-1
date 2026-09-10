@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feedback and visit booking form for Stradivarius Mega Silkway.">
+    <meta name="author" content="Kharagussova Zhamilya">
+    <title>Stradivarius Mega Silkway—Visit & Feedback</title>
+</head>
+<body>
+
+    Author: Kharagussova Zhamilya, Auyezkhan Alina
+
+    <header>
+        <h1>Book a Visit or Leave Feedback</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="colophon.html">Colophon</a></li>
+            <li><a href="about-stradivarius.html">About the Store</a></li>
+            <li><a href="visit-and-feedback.html">Visit & Feedback</a></li>
+            <li><a href="catalog.html">Collection</a></li>
+            <li><a href="care.html">Style &amp; Care</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Why section is used here instead of div:
+        this is a distinct thematic block of the page (the intro
+        text explaining the page's purpose), which is exactly
+        what section is meant to group -->
+        <section>
+            This page exists to let a visitor either book a visit to the Stradivarius store or leave feedback about a visit they already made. The form below covers both purposes at once: a visitor picks their goal — fitting, consultation, or feedback — using a radio button group, then fills in their contact details and, if relevant, an optional comment.
+            The form fields were chosen to cover the required input types for this assignment while still making sense for a real store visit. The text, email, and phone fields collect contact information; the date field lets a visitor pick a preferred visit date; the number field asks how many people are coming; the select lets them indicate which department they are interested in; and the checkbox confirms consent to data processing. The textarea is there for any additional comment a visitor wants to add, such as details about their feedback or a specific request for the fitting.
+            Since there is no server behind this form yet, submitting it does nothing at this stage — that is explained directly in a comment inside the form itself. Server-side handling will be added later in the course.
+        </section>
+
+        <p>How it works:</p>
+        <!-- Why ol is used here instead of ul:
+        these steps must happen in this exact order (fill in,
+        choose a date, wait for a reply), and ol communicates
+        that sequence to both readers and assistive technology -->
+        <ol start="1">
+            <li>Fill in the form below</li>
+            <li>Choose a convenient visit date</li>
+            <li>Wait for a reply (in reality — by email/phone)</li>
+        </ol>
+
+        <figure>
+                <img src="images/stradivarius_products.jpg">
+        </figure>
+
+        <br>
+
+        <form method="get" action="#">
+            <!-- Why a nested fieldset is used for the radio group:
+            it visually and semantically groups the three purpose
+            options as one related choice, separate from the rest
+            of the form fields -->
+            <fieldset>
+                <legend>Booking / Feedback details</legend>
+
+                <p>
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+
+                <p>
+                    <label for="visitors">Number of guests:</label>
+                    <input type="number" id="visitors" name="visitors"
+                           min="1" max="10" required>
+                </p>
+
+                <p>
+                    <label for="visit-date">Preferred visit date:</label>
+                    <input type="date" id="visit-date" name="visit-date" required>
+                </p>
+
+                <fieldset>
+                    <legend>Purpose of visit</legend>
+                    <p>
+                        <input type="radio" id="purpose-fitting" name="purpose" value="fitting">
+                        <label for="purpose-fitting">Fitting</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="purpose-consult" name="purpose" value="consult">
+                        <label for="purpose-consult">Consultation</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="purpose-feedback" name="purpose" value="feedback">
+                        <label for="purpose-feedback">Leave feedback</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I agree to the processing of my data</label>
+                </p>
+
+                <p>
+                    <label for="department">Department of interest:</label>
+                    <select id="department" name="department">
+                        <option value="">— choose —</option>
+                        <option value="women">Women's clothing</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="comment">Comment:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear form</button>
+                </p>
+
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
+    </footer>
+
+</body>
+</html>
