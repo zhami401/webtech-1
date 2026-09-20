@@ -6,20 +6,23 @@
     <meta name="description" content="About the Stradivarius store at Mega Silkway: brand and location.">
     <meta name="author" content="Kharagussova Zhamilya">
     <title>Stradivarius Mega Silkway—About the Store</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/zhamilya.css">
+    
 </head>
 <body>
 
-    Author: Kharagussova Zhamilya, Auyezkhan Alina
 
     <header>
         <h1>About Stradivarius</h1>
     </header>
 
-    <nav>
+    <nav id="site-nav">
         <ul>
+            <li><a href="registration.html">Sign up or Login</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="about-stradivarius.html">About the Store</a></li>
-            <li><a href="visit-and-feedback.html">Visit & Feedback</a></li>
+            <li><a href="visit-and-feedback.html">Visit &amp;Feedback</a></li>
             <li><a href="catalog.html">Collection</a></li>
             <li><a href="care.html">Style &amp; Care</a></li>
         </ul>
@@ -28,7 +31,8 @@
     <p>
         Jump to:
         <a href="#brand-history">Brand History</a> ·
-        <a href="#location">Location in Astana</a>
+        <a href="#location">Location in Astana</a> .
+        <a href="#contact">Contact</a>
     </p>
 
     <main>
@@ -38,6 +42,7 @@
         which is exactly what article is meant for -->
         <article>
             <h2 id="brand-history">Brand History</h2>
+            <img class="brand-history-figure" src="images/stradivarius_interior.jpg" alt="Interior of the Stradivarius store" width="400" height="300">
                 Stradivarus, a Spanish fashion company, is known for its ladies' clothes, shoes and accessories. The brand is part of the Inditex Group, one of the world’s largest fashion retail companies. Stradivarius is modern and young in style and provides clothing for everyday wear and current fashion trends.
                 Established in 1994 in Barcelona, Spain. Stradivarius originally started as a family-owned fashion business and later became part of Inditex. The brand has stores in numerous countries and sells its products in its online store too.
                 Usually, a Stradivarius shop will offer various compartments of clothes, footwear and accessories. Customers can go to the shop to view the products, sizes and to try clothes before buying.
@@ -66,7 +71,7 @@
                 Number: +77172738331
             </p>
 
-            <p>
+            <p id="contact">
                 Contact:<br>
                 Email: <a href="mailto:253467@astanait.edu.kz">Zhamilya</a> / <a href="mailto:254936@astanait.edu.kz">Alina</a><br>
                 Phone: <a href="tel:87077985555">8 (707) 798-55-55</a> / <a href="tel:87052866401">8 (705) 286-64-01</a>
@@ -94,14 +99,14 @@
             </table>        
 
             <p>Product categories in the store:</p>
-            <ul>
-                <li>Women's clothing
+            <ul class="categories-grid">
+                <li class="category-card">Women's clothing
                     <ul>
                         <li>Outerwear</li>
                         <li>Dresses</li>
                     </ul>
                 </li>
-                <li>Accessories</li>
+                <li class="category-card">Accessories</li>
             </ul>
         </section>
 
@@ -116,7 +121,7 @@
         </aside>
 
         <figure>
-            <img src="images/stradivarius_interior.jpg" 
+            <img src="images/stradivarius_interior(!).jpg" 
                 alt="Interior of Stradivarius" 
                 width="800" height="400"> 
             <figcaption>Interior of Stradivarius store in Astana</figcaption>    
@@ -143,9 +148,11 @@
 
     </main>
 
-    <footer>
+    <a href="#contact" class="fixed-contact">Contact us</a>
+
+    <footer id="site-footer">
         <p>&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
-        <p><a href="colophon.html">Colophon</a></p>
+        
     </footer>
 
 </body>

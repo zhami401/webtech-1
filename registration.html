@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Registration and login page for Stradivarius Mega Silkway">
+<meta name="author" content="Auyezkhan Alina &amp; Kharagussova Zhamilya">
+<title>Stradivarius Mega Silkway-Registration</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/alina.css">
+<style>
+  .hero-media img {
+    object-position: center 20%;
+  }
+</style>
+</head>
+<body>
+<header>
+<h1>Sign up or Login</h1>
+</header>
+
+<nav id="site-nav">
+<ul>
+<li><a href="registration.html">Sign up or Login</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="about-stradivarius.html">About the Store</a></li>
+<li><a href="visit-and-feedback.html">Visit &amp; Feedback</a></li>
+<li><a href="catalog.html">Collection</a></li>
+<li><a href="care.html">Style &amp; Care</a></li>
+</ul>
+</nav>
+
+<main>
+<section id="hero-registration" class="hero-split">
+
+<figure class="hero-media">
+<img src="images/stradivarius_exterier.jpg" alt="Model wearing a Stradivarius outfit" width="800" height="1000">
+</figure>
+
+<div class="hero-form">
+
+<h2>Sign Up</h2>
+<form action="#" method="post">
+<fieldset>
+<legend>Create a new account</legend>
+
+<p>
+<label for="reg-name">Full Name:</label>
+<input type="text" id="reg-name" name="reg-name" required>
+</p>
+
+<p>
+<label for="reg-email">Email:</label>
+<input type="email" id="reg-email" name="reg-email" required>
+</p>
+
+<p>
+<label for="reg-password">Password:</label>
+<input type="password" id="reg-password" name="reg-password" minlength="8" required>
+</p>
+
+<p>
+<label for="reg-confirm-password">Confirm Password:</label>
+<input type="password" id="reg-confirm-password" name="reg-confirm-password" minlength="8" required>
+</p>
+
+<p>
+<label for="reg-birthdate">Date of Birth:</label>
+<input type="date" id="reg-birthdate" name="reg-birthdate">
+</p>
+
+<p>
+<input type="checkbox" id="reg-newsletter" name="reg-newsletter">
+<label for="reg-newsletter">Subscribe to newsletter and promotions</label>
+</p>
+
+<p>
+<!-- Inline style: overridden by the !important rule in base.css -->
+<button type="submit" class="btn btn-primary" style="background-color: gray;">Sign Up</button>
+</p>
+</fieldset>
+</form>
+
+<h2>Login</h2>
+<form action="#" method="post">
+<fieldset>
+<legend>Already have an account?</legend>
+
+<p>
+<label for="login-email">Email:</label>
+<input type="email" id="login-email" name="login-email" required>
+</p>
+
+<p>
+<label for="login-password">Password:</label>
+<input type="password" id="login-password" name="login-password" required>
+</p>
+
+<p>
+<button type="submit" class="btn btn-primary">Login</button>
+</p>
+</fieldset>
+</form>
+
+</div>
+</section>
+</main>
+
+<a href="about-stradivarius.html" class="fixed-contact">Contact us</a>
+
+<footer id="site-footer">
+<p>&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
+</footer>
+
+</body>
+</html>

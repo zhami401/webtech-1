@@ -6,17 +6,18 @@
     <meta name="description" content="Style guides, garment care comparison table, and style consultation inquiry form for Stradivarius.">
     <meta name="author" content="Auyezkhan Alina">
     <title>Stradivarius Mega Silkway—Style Guides &amp; Garment Care</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/alina.css">
 </head>
 <body>
-
-    Author: Kharagussova Zhamilya, Auyezkhan Alina
 
     <header>
         <h1>Style Guides &amp; Garment Care</h1>
     </header>
 
-    <nav>
+    <nav id="site-nav">
         <ul>
+            <li><a href="registration.html">Sign up or Login</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="about-stradivarius.html">About the Store</a></li>
             <li><a href="visit-and-feedback.html">Visit &amp; Feedback</a></li>
@@ -63,10 +64,10 @@
                 <caption>Table 1: Material composition and washing standards</caption>
                 <thead>
                     <tr>
-                        <th>Material Type</th>
-                        <th>Recommended Temp</th>
-                        <th>Drying Method</th>
-                        <th>Key Constraint</th>
+                        <th class="thead">Material Type</th>
+                        <th class="thead">Recommended Temp</th>
+                        <th class="thead">Drying Method</th>
+                        <th class="thead">Key Constraint</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -94,12 +95,12 @@
 
         <section>
             <h2>Step-by-Step Eco-Leather Care Guide</h2>
-            <ol type="1" start="1">
-                <li>Gently wipe down surface dust and urban grime using a soft, damp microfiber cloth.</li>
-                <li>Apply a specialized conditioner designed specifically for synthetic leather to prevent cracking.</li>
-                <li>Never use aggressive chemical solvents, alcohol wipes, or machine-wash cycles on eco-leather jackets.</li>
-                <li>Hang garments on wide, padded hangers in a well-ventilated closet away from direct sunlight.</li>
-            </ol>
+            <ul class="care-steps">
+                <li class="care-step">Gently wipe down surface dust and urban grime using a soft, damp microfiber cloth.</li>
+                <li class="care-step">Apply a specialized conditioner designed specifically for synthetic leather to prevent cracking.</li>
+                <li class="care-step">Never use aggressive chemical solvents, alcohol wipes, or machine-wash cycles on eco-leather jackets.</li>
+                <li class="care-step">Hang garments on wide, padded hangers in a well-ventilated closet away from direct sunlight.</li>
+            </ul>
         </section>
 
         <section>
@@ -128,7 +129,7 @@
                     <textarea id="visitor-message" name="visitor_message" rows="4" cols="30"></textarea>
                 </p>
                 <p>
-                    <button type="submit">Submit Inquiry</button>
+                    <button type="submit" class="btn btn-primary">Submit Inquiry</button>
                 </p>
             </form>
         </section>
@@ -146,9 +147,10 @@
 
     </main>
 
-    <footer>
+    <a href="about-stradivarius.html" class="fixed-contact">Contact us</a>
+
+    <footer id="site-footer">
         <p>&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
-        <p><a href="colophon.html">Colophon</a></p>
     </footer>
 
 </body>
