@@ -6,154 +6,173 @@
     <meta name="description" content="About the Stradivarius store at Mega Silkway: brand and location.">
     <meta name="author" content="Kharagussova Zhamilya">
     <title>Stradivarius Mega Silkway—About the Store</title>
+    <!-- Bootstrap 5.3.3 via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/zhamilya.css">
-    
+
 </head>
 <body>
 
 
-    <header>
-        <h1>About Stradivarius</h1>
+    <header class="bg-dark text-white text-center text-lg-start py-5">
+        <div class="container">
+            <h1 class="display-5">About Stradivarius</h1>
+        </div>
     </header>
 
-    <nav id="site-nav">
-        <ul>
-            <li><a href="registration.html">Sign up or Login</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-stradivarius.html">About the Store</a></li>
-            <li><a href="visit-and-feedback.html">Visit &amp;Feedback</a></li>
-            <li><a href="catalog.html">Collection</a></li>
-            <li><a href="care.html">Style &amp; Care</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="site-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Stradivarius</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Sign up or Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="about-stradivarius.html">About the Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="visit-and-feedback.html">Visit &amp;Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="care.html">Style &amp; Care</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <p>
-        Jump to:
-        <a href="#brand-history">Brand History</a> ·
-        <a href="#location">Location in Astana</a> .
-        <a href="#contact">Contact</a>
-    </p>
-
     <main>
-        <!-- Why article is used here instead of section:
-        this brand history is self-contained content that would
-        still make sense if it were reused or read on its own,
-        which is exactly what article is meant for -->
-        <article>
-            <h2 id="brand-history">Brand History</h2>
-            <img class="brand-history-figure" src="images/stradivarius_interior.jpg" alt="Interior of the Stradivarius store" width="400" height="300">
-                Stradivarus, a Spanish fashion company, is known for its ladies' clothes, shoes and accessories. The brand is part of the Inditex Group, one of the world’s largest fashion retail companies. Stradivarius is modern and young in style and provides clothing for everyday wear and current fashion trends.
-                Established in 1994 in Barcelona, Spain. Stradivarius originally started as a family-owned fashion business and later became part of Inditex. The brand has stores in numerous countries and sells its products in its online store too.
-                Usually, a Stradivarius shop will offer various compartments of clothes, footwear and accessories. Customers can go to the shop to view the products, sizes and to try clothes before buying.
-                In my website project, I will be concentrating on a "real-life" Stradivarius shop. I will use my own images and data and will gather actual data from the store including location, hours, products and pricing
-            <p>
-                The brand is named after a <strong>violin maker</strong>,
-                and a detail in its logo — a <em>treble clef</em> — refers
-                to the musical origin of the name.
-            </p>
-        </article>
-
-        <hr>
-
-        <section>
-            <h2 id="location">Location in Astana</h2>
+        <div class="container py-4">
 
             <p>
-                The store is located in the
-                <!-- Why abbr with title is used instead of writing the full word:
-                it keeps the sentence short in visible text while still
-                giving the full meaning to anyone who hovers or uses a
-                screen reader -->
-                <abbr title="Shopping Mall">Mall</abbr> Mega Silkway,
-                1st <abbr title="floor">fl.</abbr>
-                Kabanbay Batyra, 62, Astana.
-                Number: +77172738331
+                Jump to:
+                <a href="#brand-history">Brand History</a> ·
+                <a href="#location">Location in Astana</a>
             </p>
 
-            <p id="contact">
-                Contact:<br>
-                Email: <a href="mailto:253467@astanait.edu.kz">Zhamilya</a> / <a href="mailto:254936@astanait.edu.kz">Alina</a><br>
-                Phone: <a href="tel:87077985555">8 (707) 798-55-55</a> / <a href="tel:87052866401">8 (705) 286-64-01</a>
-            </p>
-            <table>
-                <caption>Store opening hours</caption>
+            <!-- Why article is used here instead of section:
+            this brand history is self-contained content that would
+            still make sense if it were reused or read on its own,
+            which is exactly what article is meant for -->
+            <article>
+                <h2 id="brand-history">Brand History</h2>
+                <img class="brand-history-figure float-md-start me-md-3 mb-3 rounded" src="images/stradivarius_interior.jpg" alt="Interior of the Stradivarius store" width="400" height="300">
+                    Stradivarus, a Spanish fashion company, is known for its ladies' clothes, shoes and accessories. The brand is part of the Inditex Group, one of the world’s largest fashion retail companies. Stradivarius is modern and young in style and provides clothing for everyday wear and current fashion trends.
+                    Established in 1994 in Barcelona, Spain. Stradivarius originally started as a family-owned fashion business and later became part of Inditex. The brand has stores in numerous countries and sells its products in its online store too.
+                    Usually, a Stradivarius shop will offer various compartments of clothes, footwear and accessories. Customers can go to the shop to view the products, sizes and to try clothes before buying.
+                    In my website project, I will be concentrating on a "real-life" Stradivarius shop. I will use my own images and data and will gather actual data from the store including location, hours, products and pricing
+                <p>
+                    The brand is named after a <strong>violin maker</strong>,
+                    and a detail in its logo — a <em>treble clef</em> — refers
+                    to the musical origin of the name.
+                </p>
+            </article>
 
-                <thead>
-                    <tr>
-                        <th scope="col">Day</th>
-                        <th scope="col">Hours</th>
-                    </tr>
-                </thead>
+            <hr>
 
-                <tbody>
-                    <tr>
-                        <td>Monday – Friday</td>
-                        <td>From 10:00 to 22:00</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday – Sunday</td>
-                        <td>From 10:00 to 22:00</td>
-                    </tr>
-                </tbody>
-            </table>        
+            <section class="clearfix">
+                <h2 id="location">Location in Astana</h2>
 
-            <p>Product categories in the store:</p>
-            <ul class="categories-grid">
-                <li class="category-card">Women's clothing
-                    <ul>
-                        <li>Outerwear</li>
-                        <li>Dresses</li>
-                    </ul>
-                </li>
-                <li class="category-card">Accessories</li>
-            </ul>
-        </section>
+                <p>
+                    The store is located in the
+                    <!-- Why abbr with title is used instead of writing the full word:
+                    it keeps the sentence short in visible text while still
+                    giving the full meaning to anyone who hovers or uses a
+                    screen reader -->
+                    <abbr title="Shopping Mall">Mall</abbr> Mega Silkway,
+                    1st <abbr title="floor">fl.</abbr>
+                    Kabanbay Batyra, 62, Astana.
+                    Number: +77172738331
+                </p>
 
-        <aside>
-            <!-- Why aside is used here instead of section:
-            this fact is tangential to the main flow of the page,
-            not part of the primary content the reader came for -->
+                <p>
+                    Contact:<br>
+                    Email: <a href="mailto:253467@astanait.edu.kz">Zhamilya</a> / <a href="mailto:254936@astanait.edu.kz">Alina</a><br>
+                    Phone: <a href="tel:87077985555">8 (707) 798-55-55</a> / <a href="tel:87052866401">8 (705) 286-64-01</a>
+                </p>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <caption>Store opening hours</caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Day</th>
+                                <th scope="col">Hours</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Monday – Friday</td>
+                                <td>From 10:00 to 22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday – Sunday</td>
+                                <td>From 10:00 to 22:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Product categories in the store:</p>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="border rounded p-3 h-100">
+                            Women's clothing
+                            <ul>
+                                <li>Outerwear</li>
+                                <li>Dresses</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="border rounded p-3 h-100">Accessories</div>
+                    </div>
+                </div>
+            </section>
+
+            <aside>
+                <!-- Why aside is used here instead of section:
+                this fact is tangential to the main flow of the page,
+                not part of the primary content the reader came for -->
+                <p>
+                    <small>Fun fact: the brand was founded in 1994 in
+                    Barcelona.</small>
+                </p>
+            </aside>
+
+            <figure>
+                <img class="img-fluid rounded shadow-sm" src="images/stradivarius_interior.jpg"
+                    alt="Interior of Stradivarius"
+                    width="800" height="400">
+                <figcaption class="text-muted small">Interior of Stradivarius store in Astana</figcaption>
+            </figure>
+
+            <blockquote class="blockquote" cite="">
+                <p>
+                    <i>Fashion made with love.</i>
+                </p>
+                <footer class="blockquote-footer">Stradivarius,<cite> Store</cite>, February 2, 2022</footer>
+            </blockquote>
+
             <p>
-                <small>Fun fact: the brand was founded in 1994 in
-                Barcelona.</small>
+                Please note: opening hours may differ on holidays &mdash;
+                check on site. Promotions follow the store's
+                &laquo;sale&raquo; rules (replace with real conditions,
+                if applicable).
             </p>
-        </aside>
 
-        <figure>
-            <img src="images/stradivarius_interior(!).jpg" 
-                alt="Interior of Stradivarius" 
-                width="800" height="400"> 
-            <figcaption>Interior of Stradivarius store in Astana</figcaption>    
-
-
-        </figure>
-
-        <blockquote cite="">
-            
-            <p>
-                <i>Fashion made with love.
-
-                </i>
-            </p>
-            <footer>— Stradivarius,<cite> Store</cite>, February 2, 2022</footer>           
-        </blockquote>
-
-        <p>
-            Please note: opening hours may differ on holidays &mdash;
-            check on site. Promotions follow the store's
-            &laquo;sale&raquo; rules (replace with real conditions,
-            if applicable).
-        </p>
-
+        </div>
     </main>
 
-    <a href="#contact" class="fixed-contact">Contact us</a>
+    <a href="visit-and-feedback.html" class="btn btn-dark rounded-pill shadow position-fixed bottom-0 end-0 m-4">Contact us</a>
 
-    <footer id="site-footer">
-        <p>&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
-        
+    <footer class="border-top py-3 text-center text-muted small">
+        <div class="container">
+            <p class="mb-0">&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

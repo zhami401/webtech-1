@@ -6,152 +6,180 @@
     <meta name="description" content="Style guides, garment care comparison table, and style consultation inquiry form for Stradivarius.">
     <meta name="author" content="Auyezkhan Alina">
     <title>Stradivarius Mega Silkway—Style Guides &amp; Garment Care</title>
+    <!-- Bootstrap 5.3.3 via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/alina.css">
 </head>
 <body>
 
-    <header>
-        <h1>Style Guides &amp; Garment Care</h1>
+    <header class="bg-dark text-white text-center text-lg-start py-5">
+        <div class="container">
+            <h1 class="display-5">Style Guides &amp; Garment Care</h1>
+        </div>
     </header>
 
-    <nav id="site-nav">
-        <ul>
-            <li><a href="registration.html">Sign up or Login</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-stradivarius.html">About the Store</a></li>
-            <li><a href="visit-and-feedback.html">Visit &amp; Feedback</a></li>
-            <li><a href="catalog.html">Collection</a></li>
-            <li><a href="care.html">Style &amp; Care</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="site-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Stradivarius</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Sign up or Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-stradivarius.html">About the Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="visit-and-feedback.html">Visit &amp; Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="care.html">Style &amp; Care</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <p>
-        Jump directly to:
-        <a href="#style-rules">Style Guide Rules</a> &middot;
-        <a href="#care-table">Fabric Comparison Table</a> &middot;
-        <a href="#style-inquiry">Style Consultation Form</a>
-    </p>
-
     <main>
+        <div class="container py-4">
 
-        <article>
-            <h2 id="style-rules">Essential Style Combinations for Autumn</h2>
             <p>
-                Creating a balanced wardrobe involves mixing textures and understanding garment chemistry. 
-                When styling pieces from the Astana store, fashion consultants often emphasize 
-                <mark>layering techniques</mark> to handle shifting indoor and outdoor temperatures. 
-                As a standard industry guideline, fabric blends often feature technical notations like 
-                CO<sub>2</sub>-conscious processing or strict composition ratios such as 
-                <sup>98</sup>/<sub>2</sub> cotton-elastane mixes.
+                Jump directly to:
+                <a href="#style-rules">Style Guide Rules</a> &middot;
+                <a href="#care-table">Fabric Comparison Table</a> &middot;
+                <a href="#style-inquiry">Style Consultation Form</a>
             </p>
-            <p>
-                For professional insights into global fashion standards, you can refer to guidelines provided by 
-                <abbr title="International Organization for Standardization">ISO</abbr> textile committees. 
-                As experienced stylists frequently note, <q cite="https://www.stradivarius.com">true personal 
-                style is found in the confidence of how you combine casual basics with statement outerwear</q> 
-                <cite>&mdash; Lead Stylist</cite>.
+
+            <article>
+                <h2 id="style-rules">Essential Style Combinations for Autumn</h2>
+                <p>
+                    Creating a balanced wardrobe involves mixing textures and understanding garment chemistry.
+                    When styling pieces from the Astana store, fashion consultants often emphasize
+                    <mark>layering techniques</mark> to handle shifting indoor and outdoor temperatures.
+                    As a standard industry guideline, fabric blends often feature technical notations like
+                    CO<sub>2</sub>-conscious processing or strict composition ratios such as
+                    <sup>98</sup>/<sub>2</sub> cotton-elastane mixes.
+                </p>
+                <p>
+                    For professional insights into global fashion standards, you can refer to guidelines provided by
+                    <abbr title="International Organization for Standardization">ISO</abbr> textile committees.
+                    As experienced stylists frequently note, <q cite="https://www.stradivarius.com">true personal
+                    style is found in the confidence of how you combine casual basics with statement outerwear</q>
+                    <cite>&mdash; Lead Stylist</cite>.
+                </p>
+            </article>
+
+            <hr>
+
+            <section>
+                <h2 id="care-table">Fabric Maintenance Quick Reference Table</h2>
+                <p>Compare the primary requirements for seasonal apparel materials:</p>
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <caption>Table 1: Material composition and washing standards</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Material Type</th>
+                                <th scope="col">Recommended Temp</th>
+                                <th scope="col">Drying Method</th>
+                                <th scope="col">Key Constraint</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Eco-Leather (PU)</td>
+                                <td>Cold water only (30°C)</td>
+                                <td>Air dry on hanger</td>
+                                <td>No chemical solvents</td>
+                            </tr>
+                            <tr>
+                                <td>Denim Twill</td>
+                                <td>Moderate (40°C)</td>
+                                <td>Tumble dry low</td>
+                                <td>Wash inside out</td>
+                            </tr>
+                            <tr>
+                                <td>Faux Suede</td>
+                                <td>Hand wash / Professional</td>
+                                <td>Flat dry away from sun</td>
+                                <td>Do not iron directly</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2>Step-by-Step Eco-Leather Care Guide</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 care-steps">
+                    <div class="col">
+                        <div class="care-step border rounded p-3 h-100">Gently wipe down surface dust and urban grime using a soft, damp microfiber cloth.</div>
+                    </div>
+                    <div class="col">
+                        <div class="care-step border rounded p-3 h-100">Apply a specialized conditioner designed specifically for synthetic leather to prevent cracking.</div>
+                    </div>
+                    <div class="col">
+                        <div class="care-step border rounded p-3 h-100">Never use aggressive chemical solvents, alcohol wipes, or machine-wash cycles on eco-leather jackets.</div>
+                    </div>
+                    <div class="col">
+                        <div class="care-step border rounded p-3 h-100">Hang garments on wide, padded hangers in a well-ventilated closet away from direct sunlight.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="style-inquiry">Request a Personal Style Consultation</h2>
+                <p>Have questions about matching autumn trends? Send an inquiry to our store advisors:</p>
+
+                <form id="style-inquiry-form" method="post">
+                    <div class="mb-3">
+                        <label for="visitor-name" class="form-label">Your Name:</label>
+                        <input type="text" class="form-control" id="visitor-name" name="visitor_name" autocomplete="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="visitor-email" class="form-label">Your Email:</label>
+                        <input type="email" class="form-control" id="visitor-email" name="visitor_email" autocomplete="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="preferred-style" class="form-label">Preferred Season Vibe:</label>
+                        <select class="form-select" id="preferred-style" name="preferred_style">
+                            <option value="autumn">Autumn Layering &amp; Suede</option>
+                            <option value="denim">Denim &amp; Casual Basics</option>
+                            <option value="office">Minimalist Chic</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="visitor-message" class="form-label">Your Question:</label>
+                        <textarea class="form-control" id="visitor-message" name="visitor_message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" id="care-submit-btn" class="btn btn-dark">Submit Inquiry</button>
+                </form>
+                <div id="confirmation" class="alert-success-custom hidden" role="status" aria-live="polite"></div>
+            <div id="error-message" class="alert-danger-custom hidden" role="alert"></div>
+            </section>
+
+            <aside>
+                <p>
+                    <small>Care reminder: Always inspect the sewn-in manufacturer label before applying any
+                    cleaning agent or water treatment to delicate garments.</small>
+                </p>
+            </aside>
+
+            <p class="mt-3 mb-0">
+                Want to see these fabrics in person? Browse the <a href="catalog.html">autumn collection</a>
+                or <a href="visit-and-feedback.html">book a fitting visit</a>.
             </p>
-        </article>
 
-        <hr>
-
-        <section>
-            <h2 id="care-table">Fabric Maintenance Quick Reference Table</h2>
-            <p>Compare the primary requirements for seasonal apparel materials:</p>
-
-            <table>
-                <caption>Table 1: Material composition and washing standards</caption>
-                <thead>
-                    <tr>
-                        <th class="thead">Material Type</th>
-                        <th class="thead">Recommended Temp</th>
-                        <th class="thead">Drying Method</th>
-                        <th class="thead">Key Constraint</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Eco-Leather (PU)</td>
-                        <td>Cold water only (30°C)</td>
-                        <td>Air dry on hanger</td>
-                        <td>No chemical solvents</td>
-                    </tr>
-                    <tr>
-                        <td>Denim Twill</td>
-                        <td>Moderate (40°C)</td>
-                        <td>Tumble dry low</td>
-                        <td>Wash inside out</td>
-                    </tr>
-                    <tr>
-                        <td>Faux Suede</td>
-                        <td>Hand wash / Professional</td>
-                        <td>Flat dry away from sun</td>
-                        <td>Do not iron directly</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h2>Step-by-Step Eco-Leather Care Guide</h2>
-            <ul class="care-steps">
-                <li class="care-step">Gently wipe down surface dust and urban grime using a soft, damp microfiber cloth.</li>
-                <li class="care-step">Apply a specialized conditioner designed specifically for synthetic leather to prevent cracking.</li>
-                <li class="care-step">Never use aggressive chemical solvents, alcohol wipes, or machine-wash cycles on eco-leather jackets.</li>
-                <li class="care-step">Hang garments on wide, padded hangers in a well-ventilated closet away from direct sunlight.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2 id="style-inquiry">Request a Personal Style Consultation</h2>
-            <p>Have questions about matching autumn trends? Send an inquiry to our store advisors:</p>
-            
-            <form method="post">
-                <p>
-                    <label for="visitor-name">Your Name:</label><br>
-                    <input type="text" id="visitor-name" name="visitor_name" required>
-                </p>
-                <p>
-                    <label for="visitor-email">Your Email:</label><br>
-                    <input type="email" id="visitor-email" name="visitor_email" required>
-                </p>
-                <p>
-                    <label for="preferred-style">Preferred Season Vibe:</label><br>
-                    <select id="preferred-style" name="preferred_style">
-                        <option value="autumn">Autumn Layering &amp; Suede</option>
-                        <option value="denim">Denim &amp; Casual Basics</option>
-                        <option value="office">Minimalist Chic</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="visitor-message">Your Question:</label><br>
-                    <textarea id="visitor-message" name="visitor_message" rows="4" cols="30"></textarea>
-                </p>
-                <p>
-                    <button type="submit" class="btn btn-primary">Submit Inquiry</button>
-                </p>
-            </form>
-        </section>
-
-        <aside>
-            <p>
-                <small>Care reminder: Always inspect the sewn-in manufacturer label before applying any 
-                cleaning agent or water treatment to delicate garments.</small>
-            </p>
-        </aside>
-
-        <div>
-            <b>Status notice: Autumn garment maintenance advisory active</b>
         </div>
-
     </main>
 
-    <a href="about-stradivarius.html" class="fixed-contact">Contact us</a>
+    <a href="visit-and-feedback.html" class="btn btn-dark rounded-pill shadow position-fixed bottom-0 end-0 m-4">Contact us</a>
 
-    <footer id="site-footer">
-        <p>&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
+    <footer class="border-top py-3 text-center text-muted small">
+        <div class="container">
+            <p class="mb-0">&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
