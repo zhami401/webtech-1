@@ -22,6 +22,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="site-nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Stradivarius</a>
+            <div class="d-flex align-items-center gap-1 ms-auto order-lg-last">
+                <a class="nav-cart p-2" href="cart.html" id="nav-cart-link" aria-label="Cart">
+                    <img src="images/cart_photo.png" alt="Cart" class="nav-cart-icon" id="nav-cart-icon" width="24" height="24">
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -78,10 +83,10 @@
                         <caption>Table 1: Material composition and washing standards</caption>
                         <thead>
                             <tr>
-                                <th scope="col">Material Type</th>
-                                <th scope="col">Recommended Temp</th>
-                                <th scope="col">Drying Method</th>
-                                <th scope="col">Key Constraint</th>
+                                <th>Material Type</th>
+                                <th>Recommended Temp</th>
+                                <th>Drying Method</th>
+                                <th>Key Constraint</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -133,11 +138,11 @@
                 <form id="style-inquiry-form" method="post">
                     <div class="mb-3">
                         <label for="visitor-name" class="form-label">Your Name:</label>
-                        <input type="text" class="form-control" id="visitor-name" name="visitor_name" autocomplete="name" required>
+                        <input type="text" class="form-control" id="visitor-name" name="visitor_name" required>
                     </div>
                     <div class="mb-3">
                         <label for="visitor-email" class="form-label">Your Email:</label>
-                        <input type="email" class="form-control" id="visitor-email" name="visitor_email" autocomplete="email" required>
+                        <input type="email" class="form-control" id="visitor-email" name="visitor_email" required>
                     </div>
                     <div class="mb-3">
                         <label for="preferred-style" class="form-label">Preferred Season Vibe:</label>
@@ -149,12 +154,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="visitor-message" class="form-label">Your Question:</label>
-                        <textarea class="form-control" id="visitor-message" name="visitor_message" rows="4" required></textarea>
+                        <textarea class="form-control" id="visitor-message" name="visitor_message" rows="4"></textarea>
                     </div>
                     <button type="submit" id="care-submit-btn" class="btn btn-dark">Submit Inquiry</button>
                 </form>
-                <div id="confirmation" class="alert-success-custom hidden" role="status" aria-live="polite"></div>
-            <div id="error-message" class="alert-danger-custom hidden" role="alert"></div>
+                <div id="form-response-message" class="mt-3"></div>
             </section>
 
             <aside>
@@ -164,10 +168,9 @@
                 </p>
             </aside>
 
-            <p class="mt-3 mb-0">
-                Want to see these fabrics in person? Browse the <a href="catalog.html">autumn collection</a>
-                or <a href="visit-and-feedback.html">book a fitting visit</a>.
-            </p>
+            <div class="mt-3">
+                <b>Status notice: Autumn garment maintenance advisory active</b>
+            </div>
 
         </div>
     </main>

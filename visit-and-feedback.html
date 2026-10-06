@@ -22,8 +22,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="site-nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Stradivarius</a>
+            <div class="d-flex align-items-center gap-1 ms-auto order-lg-last">
+                <a class="nav-cart p-2" href="cart.html" id="nav-cart-link" aria-label="Cart">
+                    <img src="images/cart_photo.png" alt="Cart" class="nav-cart-icon" id="nav-cart-icon" width="24" height="24">
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto">
@@ -45,58 +50,51 @@
             this is a distinct thematic block of the page (the intro
             text explaining the page's purpose), which is exactly
             what section is meant to group -->
-            <section id="visit-intro">
-                <h2 class="h4">Plan your visit</h2>
-                <p>Whether you want to try on pieces from the new collection, get styling advice from our team or tell us how your last visit went, this is the place to do it. Choose the purpose of your visit in the form below, add your contact details and a convenient date, and the Stradivarius team at Mega Silkway will get back to you.</p>
-                <p class="text-muted small">The store is on the 1st floor of Mega Silkway, Kabanbay Batyra 62, Astana, and is open daily from 10:00 to 22:00. See <a href="about-stradivarius.html">About the Store</a> for the full address and contacts.</p>
+            <section>
+                <p>This page exists to let a visitor either book a visit to the Stradivarius store or leave feedback about a visit they already made. The form below covers both purposes at once: a visitor picks their goal — fitting, consultation, or feedback — using a radio button group, then fills in their contact details and, if relevant, an optional comment.</p>
+                <p>The form fields were chosen to cover the required input types for this assignment while still making sense for a real store visit. The text, email, and phone fields collect contact information; the date field lets a visitor pick a preferred visit date; the number field asks how many people are coming; the select lets them indicate which department they are interested in; and the checkbox confirms consent to data processing. The textarea is there for any additional comment a visitor wants to add, such as details about their feedback or a specific request for the fitting.</p>
+                <p class="text-muted small">Since there is no server behind this form yet, submitting it does nothing at this stage — that is explained directly in a comment inside the form itself. Server-side handling will be added later in the course.</p>
             </section>
 
-            <h2 class="h5">How it works</h2>
+            <p>How it works:</p>
             <!-- Why ol is used here instead of ul:
             these steps must happen in this exact order (fill in,
             choose a date, wait for a reply), and ol communicates
             that sequence to both readers and assistive technology -->
-            <ol id="visit-steps">
+            <ol start="1">
                 <li>Fill in the form below</li>
                 <li>Choose a convenient visit date</li>
                 <li>Wait for a reply (in reality — by email/phone)</li>
             </ol>
 
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <figure>
-                        <img class="img-fluid rounded shadow-sm" src="images/stradivarius_products.jpg"
-                            alt="Clothing and accessories on display at the Stradivarius store"
-                            width="800" height="900">
-                        <figcaption class="text-muted small">Pieces you can try on during a fitting visit</figcaption>
-                    </figure>
-                </div>
-            </div>
+            <figure>
+                <img class="img-fluid rounded shadow-sm" src="images/stradivarius_products.jpg"
+                    alt="stradivarius_products"
+                    width="800" height="900">
+            </figure>
 
-            <h2 class="h4 mt-4" id="visit-form-title">Booking and feedback form</h2>
-
-            <form id="visit-form" method="post" class="mt-2" aria-labelledby="visit-form-title">
+            <form id="visit-form" method="get" class="mt-4">
                 <!-- Why a nested fieldset is used for the radio group:
                 it visually and semantically groups the three purpose
                 options as one related choice, separate from the rest
                 of the form fields -->
-                <fieldset id="visit-details" class="border rounded p-3">
+                <fieldset class="border rounded p-3">
                     <legend class="h6">Booking / Feedback details</legend>
 
                     <div class="row g-3">
                         <div class="col-12 col-md-6">
                             <label for="fullname" class="form-label">Full name:</label>
-                            <input type="text" class="form-control" id="fullname" name="fullname" autocomplete="name" required>
+                            <input type="text" class="form-control" id="fullname" name="fullname" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="phone" class="form-label">Phone:</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" autocomplete="tel" required>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
                         </div>
 
                         <div class="col-12 col-md-6">
@@ -116,15 +114,14 @@
                                 <option value="">— choose —</option>
                                 <option value="women">Women's clothing</option>
                                 <option value="accessories">Accessories</option>
-                                <option value="footwear">Footwear</option>
                             </select>
                         </div>
                     </div>
 
-                    <fieldset id="purpose-group" class="border rounded p-3 mt-3">
+                    <fieldset class="border rounded p-3 mt-3">
                         <legend class="h6">Purpose of visit</legend>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" id="purpose-fitting" name="purpose" value="fitting" required>
+                            <input class="form-check-input" type="radio" id="purpose-fitting" name="purpose" value="fitting">
                             <label class="form-check-label" for="purpose-fitting">Fitting</label>
                         </div>
                         <div class="form-check">
@@ -143,7 +140,7 @@
                     </div>
 
                     <div class="mt-3">
-                        <label for="comment" class="form-label">Comment or feedback:</label>
+                        <label for="comment" class="form-label">Comment:</label>
                         <textarea class="form-control" id="comment" name="comment" rows="4"></textarea>
                     </div>
 
@@ -154,13 +151,12 @@
 
                 </fieldset>
             </form>
-            <div id="confirmation" class="alert-success-custom hidden" role="status" aria-live="polite"></div>
-            <div id="error-message" class="alert-danger-custom hidden" role="alert"></div>
+            <div id="form-response-message" class="mt-3"></div>
 
         </div>
     </main>
 
-    <a href="#visit-form" class="btn btn-dark rounded-pill shadow position-fixed bottom-0 end-0 m-4">Contact us</a>
+    <a href="visit-and-feedback.html" class="btn btn-dark rounded-pill shadow position-fixed bottom-0 end-0 m-4">Contact us</a>
 
     <footer class="border-top py-3 text-center text-muted small">
         <div class="container">

@@ -4,110 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Colophon detailing how the Stradivarius Astana duo project was built and structured.">
-    <meta name="author" content="Auyezkhan Alina & Kharagussova Zhamilya">
+    <meta name="author" content="Auyezkhan Alina &amp; Kharagussova Zhamilya">
     <title>Stradivarius Mega Silkway — Colophon</title>
+    <!-- Bootstrap 5.3.3 via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/alina.css">
 </head>
 <body>
 
-    Author: Kharagussova Zhamilya, Auyezkhan Alina
+    <p class="visually-hidden">Author: Kharagussova Zhamilya, Auyezkhan Alina</p>
 
-    <header>
-        <h1>Colophon &amp; Project Workflow</h1>
+    <header class="bg-dark text-white text-center text-lg-start py-5">
+        <div class="container">
+            <h1 class="display-5">Colophon &amp; Project Workflow</h1>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="colophon.html">Colophon</a></li>
-            <li><a href="about-stradivarius.html">About the Store</a></li>
-            <li><a href="visit-and-feedback.html">Visit &amp; Feedback</a></li>
-            <li><a href="catalog.html">Collection</a></li>
-            <li><a href="care.html">Style &amp; Care</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="site-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Stradivarius</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Sign up or Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-stradivarius.html">About the Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="visit-and-feedback.html">Visit &amp; Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="care.html">Style &amp; Care</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <main>
+        <div class="container py-4">
 
-        <section>
-            <h2>How Our Duo Project Was Built</h2>
-            <p>
-                This website was built collaboratively by our two-person team using Visual Studio Code, 
-                adhering strictly to semantic HTML standards without frameworks or generators. We divided 
-                the pages to showcase the full retail experience of the Astana Mega Silkway store, combining 
-                brand background, practical garment guides, seasonal visual showcases, and interactive feedback tools.
-            </p>
-            <p>
-                Maintaining a cohesive layout and rigorous semantic structure across independently developed pages 
-                required careful coordination. We utilized clear semantic landmarks like <code>&lt;header&gt;</code>, 
-                <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;aside&gt;</code> 
-                to ensure the document outline remains fully accessible and transparent.
-            </p>
-            <p>
-                Every page was tested using the W3C Markup Validation Service. Reaching the status of 
-                &laquo;No errors or warnings to show&raquo; confirmed that our syntax, meta declarations, 
-                and nesting rules are fully compliant.
-            </p>
-        </section>
+            <section>
+                <h2>How Our Duo Project Was Built</h2>
+                <p>
+                    This website was built collaboratively by our two-person team using Visual Studio Code,
+                    adhering strictly to semantic HTML standards without frameworks or generators. We divided
+                    the pages to showcase the full retail experience of the Astana Mega Silkway store, combining
+                    brand background, practical garment guides, seasonal visual showcases, and interactive feedback tools.
+                </p>
+                <p>
+                    Maintaining a cohesive layout and rigorous semantic structure across independently developed pages
+                    required careful coordination. We utilized clear semantic landmarks like <code>&lt;header&gt;</code>,
+                    <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;aside&gt;</code>
+                    to ensure the document outline remains fully accessible and transparent.
+                </p>
+                <p>
+                    Every page was tested using the W3C Markup Validation Service. Reaching the status of
+                    &laquo;No errors or warnings to show&raquo; confirmed that our syntax, meta declarations,
+                    and nesting rules are fully compliant.
+                </p>
+            </section>
 
-        <section>
-            <h2>Team Contributions &amp; Page Division</h2>
-            <dl>
-                <dt>Shared Foundation &amp; Core Pages</dt>
-                <dd>The homepage (<code>index.html</code>) and this colophon page (<code>colophon.html</code>) were conceptualized, structured, and reviewed together as a team.</dd>
-                <dt>Kharagussova Zhamilya</dt>
-                <dd>Developed the brand history and store location page (<code>about-stradivarius.html</code>) featuring opening hour tables, along with the visit booking and feedback form page (<code>visit-and-feedback.html</code>).</dd>
-                <dt>Auyezkhan Alina</dt>
-                <dd>Developed the autumn collection overview catalog (<code>catalog.html</code>) incorporating field photography and nested lists, as well as the garment care and style guide page (<code>care.html</code>) featuring technical tables and an inquiry form.</dd>
-            </dl>
-        </section>
+            <section>
+                <h2>Team Contributions &amp; Page Division</h2>
+                <dl id="colophon-credits">
+                    <dt>Shared Foundation &amp; Core Pages</dt>
+                    <dd>The homepage (<code>index.html</code>) and this colophon page (<code>colophon.html</code>) were conceptualized, structured, and reviewed together as a team.</dd>
+                    <dt>Kharagussova Zhamilya</dt>
+                    <dd>Developed the brand history and store location page (<code>about-stradivarius.html</code>) featuring opening hour tables, along with the visit booking and feedback form page (<code>visit-and-feedback.html</code>).</dd>
+                    <dt>Auyezkhan Alina</dt>
+                    <dd>Developed the autumn collection overview catalog (<code>catalog.html</code>) incorporating field photography and nested lists, as well as the garment care and style guide page (<code>care.html</code>) featuring technical tables and an inquiry form.</dd>
+                </dl>
+            </section>
 
-        <section>
-            <h2>Tools and Code Snippets</h2>
-            <p>
-                Example of a structured table layout used for fabric care and maintenance standards across our pages:
-            </p>
-<pre><code>&lt;table border="1"&gt;
+            <section>
+                <h2>Tools and Code Snippets</h2>
+                <p>
+                    Example of a structured table layout used for fabric care and maintenance standards across our pages:
+                </p>
+<pre><code>&lt;table&gt;
     &lt;caption&gt;Table 1: Material composition standards&lt;/caption&gt;
     &lt;thead&gt;
         &lt;tr&gt;&lt;th&gt;Material&lt;/th&gt;&lt;th&gt;Temp&lt;/th&gt;&lt;/tr&gt;
     &lt;thead&gt;
     &lt;tbody&gt;...&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-            <p>
-                To verify code validity during development, <kbd>Ctrl+U</kbd> was used alongside the 
-                W3C Validator, which prints out:
-                <samp>Document checking completed. No errors or warnings to show.</samp>
-            </p>
-        </section>
+                <p>
+                    To verify code validity during development, <kbd>Ctrl+U</kbd> was used alongside the
+                    W3C Validator, which prints out:
+                    <samp>Document checking completed. No errors or warnings to show.</samp>
+                </p>
+            </section>
 
-        <section>
-            <h2>Development Steps</h2>
-            <ol type="1" start="1">
-                <li>Team planning and task delegation for the six Astana Stradivarius store pages</li>
-                <li>Drafting individual page markups with semantic skeletons and navigation bars</li>
-                <li>Integrating field photography, itemized nested lists, definition blocks, and interactive forms</li>
-                <li>Cross-validation of all files via the W3C Markup Validation Service</li>
-            </ol>
-        </section>
+            <section>
+                <h2>Development Steps</h2>
+                <ol type="1" start="1">
+                    <li>Team planning and task delegation for the six Astana Stradivarius store pages</li>
+                    <li>Drafting individual page markups with semantic skeletons and navigation bars</li>
+                    <li>Integrating field photography, itemized nested lists, definition blocks, and interactive forms</li>
+                    <li>Cross-validation of all files via the W3C Markup Validation Service</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Useful Links</h2>
-            <p>
-                All project pages were validated using the
-                <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
-                    W3C Markup Validation Service
-                </a>.
-            </p>
-        </section>
+            <section>
+                <h2>Useful Links</h2>
+                <p>
+                    All project pages were validated using the
+                    <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
+                        W3C Markup Validation Service
+                    </a>.
+                </p>
+            </section>
 
-        <div>
-            <p>Project Version: <span>3.0 (Complete Duo Edition)</span></p>
+            <div>
+                <p>Project Version: <span>3.0 (Complete Duo Edition)</span></p>
+            </div>
+
         </div>
-
     </main>
 
-    <footer>
-        <p>&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
+    <a href="visit-and-feedback.html" class="btn btn-dark rounded-pill shadow position-fixed bottom-0 end-0 m-4">Contact us</a>
 
+    <footer class="border-top py-3 text-center text-muted small">
+        <div class="container">
+            <p class="mb-0">&copy; 2026. Kharagussova Zhamilya, Auyezkhan Alina. Student project.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

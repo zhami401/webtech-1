@@ -60,6 +60,24 @@ mark {
   color: var(--color-ink);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 2rem;
+}
+
+p a[href^="#"] {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+p a[href^="#"]:hover {
+  text-decoration: underline;
+  color: var(--color-ink);
+}
 .hidden {
   display: none !important;
 }
@@ -90,4 +108,103 @@ mark {
   background-color: #f8d7da;
   border: 1px solid #f5c2c7;
   border-radius: 0.375rem;
+}
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 4.5rem; 
+}
+body { 
+  overflow-x: hidden; 
+  padding-bottom: 5rem; 
+}
+.product-img { 
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 4 / 3; 
+  object-fit: cover; 
+}
+.product-card { 
+  transition: box-shadow .2s ease;
+}
+.product-card:hover { 
+  box-shadow: var(--bs-box-shadow); 
+}
+#cart-table th:last-child, #cart-table td:last-child { 
+  white-space: nowrap; 
+}
+.contact-fab { 
+  z-index: 1030; 
+  margin-bottom: calc(1rem + env(safe-area-inset-bottom, 0px)) !important; 
+}
+.jump-links a { 
+  display: inline-block; 
+  padding: .35rem .75rem; 
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto; 
+  }
+  .product-card { 
+    transition: none; 
+  }
+}
+html { 
+  scroll-padding-top: 4.5rem; 
+}
+body {
+  overflow-x: hidden; 
+}
+.cart-thumb { 
+  width: 96px; 
+  height: 96px; 
+  object-fit: cover; 
+  flex-shrink: 0; 
+}
+.cart-title { 
+  letter-spacing: -.02em; 
+}
+#cart-filled { 
+  display: none; 
+}
+#cart-filled:target { 
+  display: block; 
+}
+#cart-filled:target ~ #cart-empty {
+  display: none; 
+}
+@media (min-width: 992px) { 
+  .summary-sticky { 
+    position: sticky; 
+    top: 5rem; 
+  } 
+}
+@media (max-width: 575.98px) { 
+  .cart-thumb { 
+    width: 80px; 
+    height: 80px; 
+  } 
+}
+
+
+.nav-cart-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+   
+    filter: invert(1) brightness(1.8);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#nav-cart-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+#nav-cart-link:hover .nav-cart-icon,
+#nav-cart-link:focus-visible .nav-cart-icon {
+    transform: scale(1.15);
+    
+    filter: invert(39%) sepia(18%) saturate(942%) hue-rotate(352deg) brightness(92%) contrast(88%);
 }

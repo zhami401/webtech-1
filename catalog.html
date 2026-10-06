@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stradivarius Astana autumn transition collection overview, featuring cozy earthy tones and layered apparel.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#212529">
+    <meta name="description" content="Stradivarius Mega Silkway collection: tops, bottoms, outerwear and footwear with prices, sizes and a pickup order form.">
     <meta name="author" content="Auyezkhan Alina">
-    <title>Stradivarius Mega Silkway—Autumn Collection Vibe &amp; Review</title>
+    <title>Stradivarius Mega Silkway—Collection</title>
     <!-- Bootstrap 5.3.3 via CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
@@ -13,16 +14,20 @@
 </head>
 <body>
 
-
-    <header class="bg-dark text-white text-center text-lg-start py-5">
+    <header class="bg-dark text-white text-center text-lg-start py-4 py-md-5">
         <div class="container">
-            <h1 class="display-5">Autumn Collection Vibe &amp; Seasonal Overview</h1>
+            <h1 class="display-6 display-md-5 mb-0">Collection</h1>
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="site-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="site-nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Stradivarius</a>
+            <div class="d-flex align-items-center gap-1 ms-auto order-lg-last">
+                <a class="nav-cart p-2" href="cart.html" id="nav-cart-link" aria-label="Cart">
+                    <img src="images/cart_photo.png" alt="Cart" class="nav-cart-icon" id="nav-cart-icon" width="24" height="24">
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,132 +45,188 @@
     </nav>
 
     <main>
-        <div class="container py-4">
+        <div class="container py-3 py-md-4">
 
-            <p>
+            <p class="jump-links">
                 Jump to:
-                <a href="#autumn-vibe">Autumn Vibe</a> &middot;
-                <a href="#fabrics">Fabric &amp; Care Guide</a>
+                <a href="#top">Top</a> &middot;
+                <a href="#bottom">Bottom</a> &middot;
+                <a href="#outerwear">Outerwear</a> &middot;
+                <a href="#footwear">Footwear</a>
             </p>
 
-            <article>
-                <h2 id="autumn-vibe">The Cozy Autumn Transition &amp; Store Atmosphere</h2>
-                <p>
-                    As the season shifts towards cooler days in Astana, the Stradivarius boutique adapts its
-                    floor layout to reflect a warm, earthy <strong>autumn vibe</strong>. Captured during a recent
-                    store inspection, the transition collection embraces rich textures, deep chocolate browns,
-                    olive greens, and structured outerwear designed for crisp weather. You can explore further
-                    seasonal concepts directly on the
-                    <a href="https://www.stradivarius.com" target="_blank" rel="noopener noreferrer">
-                        official Stradivarius platform
-                    </a>.
-                </p>
-                <p>
-                    The interior styling combines soft ambient lighting with wooden fixtures, establishing a cozy
-                    and comforting atmosphere. Reflecting on the seasonal shift, style experts note that
-                    <q cite="https://www.stradivarius.com">autumn fashion is defined by rich layering, deep color palettes,
-                    and tactile fabrics like suede and faux leather</q> <cite>&mdash; Store Merchandiser</cite>.
-                </p>
-            </article>
-
-            <hr>
-
-            <section>
-                <h2>Key Autumn Transition Categories</h2>
-                <p>Based on the selected seasonal visual arrangement, the assortment highlights:</p>
-
-                <div class="row g-3">
-                    <div class="col-12 col-md-6 col-lg-8">
-                        <div class="border rounded p-3 h-100">
-                            <p class="fw-bold mb-2">Outerwear &amp; Layering Pieces</p>
-                            <div class="row">
-                                <div class="col-12 col-sm-6">Brown faux-suede jackets and structured utility coats</div>
-                                <div class="col-12 col-sm-6">Light denim jackets with military-inspired button detailing</div>
+            <section id="shop">
+                <h2>Shop the Collection</h2>
+                <p>Choose a size and add pieces to your cart. Clothing sizes run XS&ndash;XL, footwear EU 36&ndash;41. Prices are in tenge (₸). For fabric advice see <a href="care.html">Style &amp; Care</a>.</p>
+                <div id="product-list">
+                    <h3 id="top" class="h4 mt-4 mb-3">Top</h3>
+                    <div id="category-top" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 g-md-4">
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-top-1">
+                                <img src="images/клетка_рубашка.jpg" class="card-img-top product-img" alt="Plaid shirt" width="400" height="300" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Plaid shirt</h4>
+                                    <p class="fw-bold mt-auto">14 990&nbsp;₸</p>
+                                    <label for="size-top-1" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-top-1" name="size-top-1"><option value="">Choose size</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-top-1-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-top-2">
+                                <img src="images/линии_кофта.jpg" class="card-img-top product-img" alt="Striped top" width="400" height="300" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Striped top</h4>
+                                    <p class="fw-bold mt-auto">11 990&nbsp;₸</p>
+                                    <label for="size-top-2" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-top-2" name="size-top-2"><option value="">Choose size</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-top-2-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-top-3">
+                                <img src="images/полоска_лонг.jpg" class="card-img-top product-img" alt="Striped long-sleeve" width="400" height="300" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Striped long-sleeve</h4>
+                                    <p class="fw-bold mt-auto">9 990&nbsp;₸</p>
+                                    <label for="size-top-3" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-top-3" name="size-top-3"><option value="">Choose size</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-top-3-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <h3 id="bottom" class="h4 mt-4 mb-3">Bottom</h3>
+                    <div id="category-bottom" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 g-md-4">
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-bottom-1">
+                                <img src="images/capris.jpg" class="card-img-top product-img" alt="Capris" width="400" height="300" loading="lazy" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Capris</h4>
+                                    <p class="fw-bold mt-auto">17 990&nbsp;₸</p>
+                                    <label for="size-bottom-1" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-bottom-1" name="size-bottom-1"><option value="">Choose size</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-bottom-1-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-bottom-2">
+                                <img src="images/серые_штаны.jpg" class="card-img-top product-img" alt="Grey trousers" width="400" height="300" loading="lazy" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Grey trousers</h4>
+                                    <p class="fw-bold mt-auto">19 990&nbsp;₸</p>
+                                    <label for="size-bottom-2" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-bottom-2" name="size-bottom-2"><option value="">Choose size</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-bottom-2-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-bottom-3">
+                                <img src="images/клетчактые.jpg" class="card-img-top product-img" alt="Checked trousers" width="400" height="300" loading="lazy" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Checked trousers</h4>
+                                    <p class="fw-bold mt-auto">15 990&nbsp;₸</p>
+                                    <label for="size-bottom-3" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-bottom-3" name="size-bottom-3"><option value="">Choose size</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-bottom-3-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <h3 id="outerwear" class="h4 mt-4 mb-3">Outerwear</h3>
+                    <div id="category-outerwear" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 g-md-4">
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-outerwear-1">
+                                <img src="images/белое_пальто.jpg" class="card-img-top product-img" alt="White coat" width="400" height="300" loading="lazy" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">White coat</h4>
+                                    <p class="fw-bold mt-auto">21 990&nbsp;₸</p>
+                                    <label for="size-outerwear-1" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-outerwear-1" name="size-outerwear-1"><option value="">Choose size</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-outerwear-1-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-outerwear-2">
+                                <img src="images/кожанка.jpg" class="card-img-top product-img" alt="Leather jacket" width="400" height="300" loading="lazy" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Leather jacket</h4>
+                                    <p class="fw-bold mt-auto">20 990&nbsp;₸</p>
+                                    <label for="size-outerwear-2" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-outerwear-2" name="size-outerwear-2"><option value="">Choose size</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-outerwear-2-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-outerwear-3">
+                                <img src="images/тренч_желтый.jpg" class="card-img-top product-img" alt="Yellow trench coat" width="400" height="300" loading="lazy" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Yellow trench coat</h4>
+                                    <p class="fw-bold mt-auto">29 990&nbsp;₸</p>
+                                    <label for="size-outerwear-3" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-outerwear-3" name="size-outerwear-3"><option value="">Choose size</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-outerwear-3-btn">Add to cart</button>
+                                </div>
                             </div>
-                        </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="border rounded p-3 h-100">
-                            <p class="fw-bold mb-2">Earthy Bottoms &amp; Knitwear</p>
-                            <ul class="mb-0">
-                                <li>Relaxed olive-green cargo trousers and warm-toned trousers</li>
-                                <li>Textured knitted elements and brown color-blocked clothing racks</li>
-                            </ul>
+                    <h3 id="footwear" class="h4 mt-4 mb-3">Footwear</h3>
+                    <div id="category-footwear" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 g-md-4">
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-footwear-1">
+                                <img src="images/сникерсы.jpg" class="card-img-top product-img" alt="Sneakers" width="400" height="300" loading="lazy" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Sneakers</h4>
+                                    <p class="fw-bold mt-auto">32 990&nbsp;₸</p>
+                                    <label for="size-footwear-1" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-footwear-1" name="size-footwear-1"><option value="">Choose size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-footwear-1-btn">Add to cart</button>
+                                </div>
+                            </article>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="border rounded p-3">Accessories &amp; Footwear (brown leather crossbody bags, buckled footwear)</div>
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-footwear-2">
+                                <img src="images/бордо_каблук.jpg" class="card-img-top product-img" alt="Burgundy heels" width="400" height="300" loading="lazy" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Burgundy heels</h4>
+                                    <p class="fw-bold mt-auto">24 990&nbsp;₸</p>
+                                    <label for="size-footwear-2" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-footwear-2" name="size-footwear-2"><option value="">Choose size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-footwear-2-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="card h-100 product-card" id="product-footwear-3">
+                                <img src="images/корич_балетки.jpg" class="card-img-top product-img" alt="Sneakerinas" width="400" height="300" loading="lazy" decoding="async">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="h5 card-title">Sneakerinas</h4>
+                                    <p class="fw-bold mt-auto">22 990&nbsp;₸</p>
+                                    <label for="size-footwear-3" class="form-label small mb-1">Size:</label>
+                                    <select class="form-select mb-2" id="size-footwear-3" name="size-footwear-3"><option value="">Choose size</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option></select>
+                                    <button type="button" class="btn btn-dark" id="add-footwear-3-btn">Add to cart</button>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section>
-                <h2 id="fabrics">Fabric &amp; Garment Specifications</h2>
-                <p>
-                    The autumn garments feature denser textile blends incorporating <strong>cotton</strong>,
-                    <em>faux suede</em>, and durable structural weaves tailored for cooler temperatures.
-                </p>
-
-                <p>Recommended maintenance steps for autumn fabrics:</p>
-                <ol type="1" start="1">
-                    <li>Carefully check internal labels regarding professional dry-cleaning recommendations for faux suede.</li>
-                    <li>Wash structured cotton items inside out on a gentle cycle to protect button hardware.</li>
-                    <li>Store leather and suede accessories away from direct heat sources to preserve texture.</li>
-                </ol>
-
-                <dl>
-                    <dt>Faux Suede</dt>
-                    <dd>A soft, brushed synthetic fabric mimicking animal suede, offering warmth and a luxurious autumn aesthetic.</dd>
-                    <dt>Cargo Weave</dt>
-                    <dd>A heavy-duty utility textile utilized for structured trousers, featuring practical pockets and durability.</dd>
-                </dl>
+            <section id="cart" class="mt-5 text-center text-md-start">
+                <h2>Ready to order?</h2>
+                <p>Your selected pieces, the total price and the pickup order form are on the cart page.</p>
+                <a href="cart.html" class="btn btn-dark btn-lg">Go to cart</a>
             </section>
-
-            <aside>
-                <p>
-                    <small>Merchandising tip: Combining deep brown suede jackets with crisp whites and olive tones
-                    creates a balanced, sophisticated &laquo;autumn contrast&raquo; look.</small>
-                </p>
-            </aside>
-
-            <!-- Bootstrap component: Card. Used for the three collection
-                 photos; added a position-absolute "New" badge on the first. -->
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100 position-relative">
-                        <span class="badge bg-dark position-absolute top-0 end-0 m-2">New</span>
-                        <img src="images/brown_jacket.jpg" class="card-img-top" alt="Mannequin wearing a brown suede jacket surrounded by autumn denim and racks">
-                        <div class="card-body">
-                            <p class="card-text text-muted small">Figure 1: Suede outerwear and rich brown racks reflecting the cozy autumn mood.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="images/napaleon_jacket.jpg" class="card-img-top" alt="Mannequins styled with military-style denim jackets and patterned trousers">
-                        <div class="card-body">
-                            <p class="card-text text-muted small">Figure 2: Transitional layer jackets and detailed accessories.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="images/olive_pants.jpg" class="card-img-top" alt="Boutique floor layout featuring earth-toned clothing, olive cargo pants, and leather jackets">
-                        <div class="card-body">
-                            <p class="card-text text-muted small">Figure 3: Comprehensive look at the earth-toned autumn collection display.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-4">
-                <b>Inventory status: Autumn transition collection fully stocked</b>
-            </div>
 
         </div>
     </main>
 
-    <a href="visit-and-feedback.html" class="btn btn-dark rounded-pill shadow position-fixed bottom-0 end-0 m-4">Contact us</a>
+    <a href="visit-and-feedback.html" class="btn btn-dark rounded-pill shadow position-fixed bottom-0 end-0 m-3 m-md-4 contact-fab">Contact us</a>
 
     <footer class="border-top py-3 text-center text-muted small">
         <div class="container">
