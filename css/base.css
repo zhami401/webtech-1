@@ -185,13 +185,11 @@ body {
   } 
 }
 
-
 .nav-cart-icon {
     display: inline-block;
     width: 30px;
     height: 30px;
     object-fit: contain;
-   
     filter: invert(1) brightness(1.8);
     transition: transform 0.2s ease, filter 0.2s ease;
 }
@@ -201,10 +199,8 @@ body {
     align-items: center;
 }
 
-
 #nav-cart-link:hover .nav-cart-icon,
 #nav-cart-link:focus-visible .nav-cart-icon {
     transform: scale(1.15);
-    
     filter: invert(39%) sepia(18%) saturate(942%) hue-rotate(352deg) brightness(92%) contrast(88%);
 }
