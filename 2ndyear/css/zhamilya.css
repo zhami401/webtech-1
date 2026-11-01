@@ -1,0 +1,4 @@
+/* zhamilya.css: Bootstrap has no fixed-pixel width utility. */
+.brand-history-figure {
+  max-width: 260px;
+}

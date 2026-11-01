@@ -1,0 +1,33 @@
+/* alina.css */
+
+/* Bootstrap has no auto-numbering badge, so a CSS counter does this. */
+.care-steps {
+  counter-reset: step;
+}
+
+.care-step {
+  counter-increment: step;
+}
+
+.care-step::before {
+  content: counter(step);
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: white;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+#colophon-credits dt {
+  color: var(--color-accent);
+}
+
+/* Bootstrap has only vh-100/min-vh-100, no fixed pixel min-height. */
+.hero-row {
+  min-height: 28rem;
+}

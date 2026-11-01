@@ -1,0 +1,206 @@
+/* base.css */
+:root {
+  --color-ink: #1a1a1a;
+  --color-paper: #faf7f2;
+  --color-accent: #6b5b45;
+  --color-border: rgba(26, 26, 26, 0.12);
+
+  --font-display: Georgia, "Times New Roman", Times, serif;
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: var(--color-ink);
+}
+
+/* Bootstrap override: brand accent instead of navbar-dark's default hover. */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: var(--color-accent);
+}
+
+/* Decorative quote mark on the blockquote; Bootstrap has no equivalent. */
+blockquote {
+  position: relative;
+}
+
+blockquote::before {
+  content: "\201C";
+  position: absolute;
+  top: -0.75rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--color-accent);
+  background-color: var(--color-paper);
+  padding: 0 0.5rem;
+}
+
+mark {
+  background-color: rgba(107, 91, 69, 0.25);
+  color: var(--color-ink);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 2rem;
+}
+
+p a[href^="#"] {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+p a[href^="#"]:hover {
+  text-decoration: underline;
+  color: var(--color-ink);
+}
+.hidden {
+  display: none !important;
+}
+
+.active-state {
+  border-color: var(--color-accent) !important;
+  background-color: rgba(107, 91, 69, 0.1) !important;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+  background-color: #f8d7da !important;
+}
+
+.alert-success-custom {
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border: 1px solid #badbcc;
+  border-radius: 0.375rem;
+}
+
+.alert-danger-custom {
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  color: #842029;
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+  border-radius: 0.375rem;
+}
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: 4.5rem; 
+}
+body { 
+  overflow-x: hidden; 
+  padding-bottom: 5rem; 
+}
+.product-img { 
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 4 / 3; 
+  object-fit: cover; 
+}
+.product-card { 
+  transition: box-shadow .2s ease;
+}
+.product-card:hover { 
+  box-shadow: var(--bs-box-shadow); 
+}
+#cart-table th:last-child, #cart-table td:last-child { 
+  white-space: nowrap; 
+}
+.contact-fab { 
+  z-index: 1030; 
+  margin-bottom: calc(1rem + env(safe-area-inset-bottom, 0px)) !important; 
+}
+.jump-links a { 
+  display: inline-block; 
+  padding: .35rem .75rem; 
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto; 
+  }
+  .product-card { 
+    transition: none; 
+  }
+}
+html { 
+  scroll-padding-top: 4.5rem; 
+}
+body {
+  overflow-x: hidden; 
+}
+.cart-thumb { 
+  width: 96px; 
+  height: 96px; 
+  object-fit: cover; 
+  flex-shrink: 0; 
+}
+.cart-title { 
+  letter-spacing: -.02em; 
+}
+#cart-filled { 
+  display: none; 
+}
+#cart-filled:target { 
+  display: block; 
+}
+#cart-filled:target ~ #cart-empty {
+  display: none; 
+}
+@media (min-width: 992px) { 
+  .summary-sticky { 
+    position: sticky; 
+    top: 5rem; 
+  } 
+}
+@media (max-width: 575.98px) { 
+  .cart-thumb { 
+    width: 80px; 
+    height: 80px; 
+  } 
+}
+
+.nav-cart-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: invert(1) brightness(1.8);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#nav-cart-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+#nav-cart-link:hover .nav-cart-icon,
+#nav-cart-link:focus-visible .nav-cart-icon {
+    transform: scale(1.15);
+    filter: invert(39%) sepia(18%) saturate(942%) hue-rotate(352deg) brightness(92%) contrast(88%);
+}
